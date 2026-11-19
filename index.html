@@ -143,6 +143,14 @@ section{padding:72px 0;border-top:1px solid #ffffff12}
 .steps li::before{content:counter(s);font-family:var(--mono);font-weight:800;background:var(--fluoro);color:var(--night);border-radius:50%;width:30px;height:30px;display:grid;place-items:center}
 .code{font-family:var(--mono);font-weight:800;background:#0008;border:1px dashed var(--tag);color:var(--tag);padding:1px 7px;border-radius:3px}
 
+.dl-btns{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.vk-btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;color:#fff;background:#0077FF;padding:14px 18px;border-radius:6px;transition:transform .15s}
+.vk-btn b{font-family:var(--display);font-weight:400;font-size:18px;background:#fff;color:#0077FF;border-radius:5px;padding:2px 6px}
+.vk-btn:hover{transform:translateY(-2px)}
+.note{font-size:14px;color:var(--muted)!important;margin:18px 0 0!important;max-width:52ch}
+.note a{color:var(--fluoro)}
+nav ul a.vk-nav{color:#6FB1FF}
+footer a{color:var(--muted)}
 footer{padding:34px 0 44px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #ffffff12}
 
 @media (max-width:860px){
@@ -175,18 +183,19 @@ footer{padding:34px 0 44px;color:var(--muted);font-size:14px;display:flex;justif
     <li><a href="#skins">Скины</a></li>
     <li><a href="#updates">Обновления</a></li>
     <li><a href="#download">Скачать</a></li>
+    <li><a class="vk-nav" href="https://vk.ru/dokygame" target="_blank" rel="noopener">ВКонтакте</a></li>
   </ul>
 </nav>
 
 <header class="hero" id="top">
   <div>
-    <div class="beta"><span class="dot"></span>Игра в разработке · скоро открытый бета-тест</div>
+    <div class="beta"><span class="dot"></span>Открытый бета-тест уже идёт · игра в разработке</div>
     <div class="kicker">Мультиплеер · 2–8 игроков · Windows</div>
     <h1>PROP <span class="b">BATTLE</span></h1>
     <p class="lead">Ночной супермаркет. Одни притворяются товарами на полках. Другие — охрана, и у неё есть тазер.</p>
     <div class="ctas">
-      <a class="tag" href="#download"><small>В разработке</small><strong>Открытый бета-тест</strong><span class="price">скоро · бесплатно</span></a>
-      <a class="ghost" href="#how">Как играть</a>
+      <a class="tag" href="https://github.com/DokyGame/propbattle/releases/download/v1.0-beta/PropBattle_Setup_v1.0_OpenBeta.exe"><small>Открытая бета · v1.0</small><strong>Скачать игру</strong><span class="price">0 ₽ · Windows · 80 МБ</span></a>
+      <a class="ghost" href="https://vk.ru/dokygame" target="_blank" rel="noopener">Группа ВКонтакте</a>
     </div>
     <div class="facts">
       <div><b>2 роли</b>товары и охрана</div>
@@ -309,7 +318,7 @@ footer{padding:34px 0 44px;color:var(--muted);font-size:14px;display:flex;justif
     <div class="receipt" aria-label="Список версий">
       <div class="c"><b>СУПЕРМАРКЕТ «PROP BATTLE»</b><br>НОЧНАЯ СМЕНА · КАССА 01</div>
       <hr>
-      <div class="row"><span>v1.0 · Меню «Ценники»</span><span>NEW</span></div>
+      <div class="row"><span>v1.0 · Открытая бета</span><span>NEW</span></div>
       <ul>
         <li>главное меню в стиле ценников</li>
         <li>список комнат, пароль, вход по коду</li>
@@ -347,12 +356,16 @@ footer{padding:34px 0 44px;color:var(--muted);font-size:14px;display:flex;justif
 <div class="wrap">
   <div class="dl">
     <div>
-      <h2>Скоро открытый бета-тест</h2>
-      <p>Prop Battle ещё в разработке. Скоро откроем бета-тест, и сыграть сможет любой. Понадобится компьютер на Windows и пара друзей: в комнате от 2 до 8 игроков.</p>
-      <a class="tag" href="#download" id="dl-link"><small>Windows · бета</small><strong>Скачать Prop Battle</strong><span class="price">появится к старту беты</span></a>
+      <h2>Открытый бета-тест</h2>
+      <p>Prop Battle ещё в разработке, но сыграть можно уже сейчас и бесплатно. Нужен компьютер на Windows и пара друзей: в комнате от 2 до 8 игроков. Нашёл баг или есть идея? Пиши в группу ВКонтакте.</p>
+      <div class="dl-btns">
+        <a class="tag" href="https://github.com/DokyGame/propbattle/releases/download/v1.0-beta/PropBattle_Setup_v1.0_OpenBeta.exe" id="dl-link"><small>Windows · v1.0 бета</small><strong>Скачать Prop Battle</strong><span class="price">установщик · 80 МБ</span></a>
+        <a class="vk-btn" href="https://vk.ru/dokygame" target="_blank" rel="noopener"><b>ВК</b>Группа игры</a>
+      </div>
+      <p class="note">Если Windows покажет синее окно «Windows защитила ваш компьютер», нажми «Подробнее» → «Выполнить в любом случае». Так бывает с играми от небольших разработчиков. <a href="https://github.com/DokyGame/propbattle/releases" target="_blank" rel="noopener">Все версии</a></p>
     </div>
     <ol class="steps">
-      <li><span>Скачай архив, распакуй и запусти <b>PropBattle.exe</b>.</span></li>
+      <li><span>Скачай установщик <b>PropBattle_Setup</b>, запусти и установи игру.</span></li>
       <li><span>Создай комнату. Можно поставить пароль, если играешь только с друзьями.</span></li>
       <li><span>Скинь друзьям код комнаты, например <span class="code">K7Q-42M</span>. IP вводить не нужно.</span></li>
       <li><span>Выберите роли и ждите, пока поднимется рольставня.</span></li>
@@ -363,7 +376,7 @@ footer{padding:34px 0 44px;color:var(--muted);font-size:14px;display:flex;justif
 
 <div class="wrap">
 <footer>
-  <span>© 2026 Prop Battle. Сделано на Unity.</span>
+  <span>© 2026 Prop Battle · DokyGame. Сделано на Unity. <a href="https://vk.ru/dokygame" target="_blank" rel="noopener">vk.ru/dokygame</a></span>
   <span>Магазин закрыт. Внутри кто-то есть.</span>
 </footer>
 </div>
