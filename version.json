@@ -1,0 +1,11 @@
+{
+  "version": "v1.1",
+  "build": 11,
+  "url": "https://github.com/DokyGame/propbattle/releases/download/v1.1-beta/PropBattle_Setup_v1.1_OpenBeta.exe",
+  "notes": [
+    "Ники игроков и табель на Tab",
+    "Новый HUD и «Итог смены» чеком",
+    "Попадания тазера засчитываются точнее",
+    "Тихий шаг товара (Alt)"
+  ]
+}
